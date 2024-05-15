@@ -20,6 +20,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import ru.stebakov.profanityfilter.ui.theme.ProfanityFilterTheme
 
 class MainActivity : ComponentActivity() {
+
     @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
