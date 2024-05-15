@@ -32,7 +32,6 @@ open class PlainDictionary(context: Context, filePath: String) : Dictionary {
                 foundBadWords.add(badWord)
             }
         }
-        Log.d("SAFASFASFAS","foundBadWords = $foundBadWords")
         return foundBadWords
     }
 
