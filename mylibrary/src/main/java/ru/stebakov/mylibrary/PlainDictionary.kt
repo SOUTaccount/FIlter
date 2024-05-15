@@ -1,4 +1,4 @@
-package ru.stebakov.profanityfilter
+package ru.stebakov.mylibrary
 
 import android.content.Context
 import android.util.Log

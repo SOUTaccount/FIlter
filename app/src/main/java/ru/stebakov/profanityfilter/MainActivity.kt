@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
@@ -24,6 +25,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             val profanityFilter = LocalProfanityFilter.current
+
+            val text = "Привет хуй манда жопа Привет хуй манда жопа Привет хуй манда жопаПривет хуй манда жопаПривет хуй манда жопа Привет хуй манда жопаПривет хуй манда жопаПривет хуй манда жопаПривет хуй манда жопаПривет хуй манда жопа"
             ProfanityFilterTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
@@ -34,12 +37,20 @@ class MainActivity : ComponentActivity() {
                         val textState = remember {
                             mutableStateOf(TextFieldValue(""))
                         }
+                        val textState1 = remember {
+                            mutableStateOf("")
+                        }
                         Text(text = "Hello")
                         OutlinedTextField(
                             value = textState.value,
                             onValueChange = { textState.value = it }
                         )
-                        Text(text = profanityFilter.censor(textState.value.text))
+                        Button(onClick = {
+                            textState1.value = profanityFilter.censor(text)
+                        }) {
+                            Text("click me")
+                        }
+                        Text(text = textState1.value)
                     }
                 }
             }

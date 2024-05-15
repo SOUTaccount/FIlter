@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ProfanityFilter"
 include ':app'
+include ':benchmark'
+include ':mylibrary'
