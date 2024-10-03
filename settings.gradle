@@ -16,3 +16,6 @@ rootProject.name = "ProfanityFilter"
 include ':app'
 include ':benchmark'
 include ':mylibrary'
+include ':lib'
+include ':test'
+include ':lib2'

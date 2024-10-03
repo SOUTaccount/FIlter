@@ -26,6 +26,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             val profanityFilter = LocalProfanityFilter.current
 
+
             val text = "Привет хуй манда жопа Привет хуй манда жопа Привет хуй манда жопаПривет хуй манда жопаПривет хуй манда жопа Привет хуй манда жопаПривет хуй манда жопаПривет хуй манда жопаПривет хуй манда жопаПривет хуй манда жопа"
             ProfanityFilterTheme {
                 // A surface container using the 'background' color from the theme
