@@ -11,10 +11,12 @@ import java.util.Arrays
 import java.util.Queue
 
 class AhoCorasickDoubleArrayTrie<V> : Serializable {
+
     /**
      * check array of the Double Array Trie structure
      */
     protected var check: IntArray = intArrayOf()
+
 
     /**
      * base array of the Double Array Trie structure
