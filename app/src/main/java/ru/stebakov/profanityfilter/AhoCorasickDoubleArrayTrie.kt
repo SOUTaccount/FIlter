@@ -12,6 +12,7 @@ import java.util.Queue
 
 class AhoCorasickDoubleArrayTrie<V> : Serializable {
 
+
     /**
      * check array of the Double Array Trie structure
      */
@@ -33,6 +34,7 @@ class AhoCorasickDoubleArrayTrie<V> : Serializable {
      * output table of the Aho Corasick automata
      */
     protected var output: Array<IntArray?> = arrayOf(intArrayOf())
+
 
     /**
      * outer value array
