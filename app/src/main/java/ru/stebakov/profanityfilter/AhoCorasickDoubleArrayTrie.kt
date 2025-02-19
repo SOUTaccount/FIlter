@@ -21,6 +21,7 @@ class AhoCorasickDoubleArrayTrie<V> : Serializable {
      */
     protected var base: IntArray= intArrayOf()
 
+
     /**
      * fail table of the Aho Corasick automata
      */
